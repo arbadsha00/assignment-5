@@ -20,6 +20,7 @@
               primary: "#B4F461",
               gray1: "#585858",
               gray2: "#F9F7F3",
+              gray3: "#f3f3f3",
             },
           },
         },
@@ -43,138 +44,146 @@
       }
     </style>
   </head>
-  <body class="font-lexend">
-    <header>
-      <!-- navBg -->
-      <section class="bg-gray2">
-        <!-- nav  -->
-        <nav class="container mx-auto md:px-6">
-          <div class="flex justify-between items-center py-3 md:pt-6 md:pb-10">
-            <div class="md:hidden">
-              <button class="btn text-xl btn bg-primary px-3">
-                <i class="fa-solid fa-house"></i>
-              </button>
-            </div>
-            <div class="hidden md:flex">
-              <button class="font-semibold text-xl btn bg-primary md:px-8">
-                Home
-              </button>
-            </div>
-            <div class="flex items-center md:gap-3">
-              <div class="">
-                <img
-                  src="./images/logo.png"
-                  class="w-4/6 mx-auto md:w-full"
-                  alt=""
-                />
-              </div>
+  <body class="font-lexend bg-gray2">
+    <!-- nav bg -->
 
-              <h3 class="md:text-xl font-semibold">Donate Bangladesh</h3>
-            </div>
-            <div class="flex items-center gap-2">
-              <div class="">
-                <img src="./images/coin.png" class="w-full" alt="" />
-              </div>
-
-              <h3 class="md:text-xl text-gray1 font-medium">
-                <span>5500</span> BDT
-              </h3>
-            </div>
+    <header class="sticky top-0 z-10 backdrop-blur-lg">
+      <!-- nav  -->
+      <nav class="container mx-auto md:px-6">
+        <div class="flex justify-between items-center py-3 md:pt-6 md:pb-10">
+          <div class="md:hidden">
+            <button class="btn text-xl btn bg-primary px-3">
+              <i class="fa-solid fa-house"></i>
+            </button>
           </div>
-        </nav>
-      </section>
+          <div class="hidden md:flex">
+            <button class="font-semibold text-xl btn bg-primary md:px-8">
+              Home
+            </button>
+          </div>
+          <div class="flex items-center md:gap-3">
+            <div class="">
+              <img
+                src="./images/logo.png"
+                class="w-4/6 mx-auto md:w-full"
+                alt=""
+              />
+            </div>
+
+            <h3 class="md:text-xl font-semibold">Donate Bangladesh</h3>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="">
+              <img src="./images/coin.png" class="w-full" alt="" />
+            </div>
+
+            <h3 class="md:text-xl text-gray1 font-medium">
+              <span>5500</span> BDT
+            </h3>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main class="container mx-auto px-3">
-      <div class="py-6 md:py-16">
-        <img src="./images/qa-02.png" class="mx-auto w-5/6 md:w-auto" alt="" />
-      </div>
-      <div class="space-y-6">
-        <div
-          tabindex="0"
-          class="collapse collapse-arrow border-base-300 bg-primary border"
-        >
-          <div class="collapse-title text-xl font-medium">
-            What is the Document Object Model (DOM)?
+    <!--  -->
+    <section class="bg-white pb-20">
+      <main class="container mx-auto px-3">
+        <div class="py-6 md:py-16">
+          <img
+            src="./images/qa-02.png"
+            class="mx-auto w-5/6 md:w-auto"
+            alt=""
+          />
+        </div>
+        <div class="space-y-6">
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow border-base-300 bg-primary border"
+          >
+            <div class="collapse-title text-xl font-medium">
+              What is the Document Object Model (DOM)?
+            </div>
+            <div class="collapse-content bg-gray2">
+              <p class="p-4">
+                The Document Object Model (DOM) is a programming interface for
+                web documents. It represents the structure of a document
+                (usually HTML or XML) as a tree of objects, where each node in
+                the tree corresponds to part of the document, such as elements,
+                attributes, and text content.
+              </p>
+            </div>
           </div>
-          <div class="collapse-content bg-gray2">
-            <p class="p-4">
-              The Document Object Model (DOM) is a programming interface for web
-              documents. It represents the structure of a document (usually HTML
-              or XML) as a tree of objects, where each node in the tree
-              corresponds to part of the document, such as elements, attributes,
-              and text content.
-            </p>
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow border-base-300 bg-primary border"
+          >
+            <div class="collapse-title text-xl font-medium">
+              How do you select an element from the DOM?
+            </div>
+            <div class="collapse-content bg-gray2">
+              <p class="p-4">
+                To select an element from the DOM, you can use several
+                JavaScript methods. The getElementById('id') method selects an
+                element by its id, while getElementsByClassName('class') selects
+                all elements with a specific class name. Similarly,
+                getElementsByTagName('tag') selects elements by their tag name.
+                If you need more flexible selection, querySelector('selector')
+                selects the first element that matches a CSS selector, and
+                querySelectorAll('selector') selects all matching elements.
+                These methods allow you to target and manipulate specific
+                elements in the document.
+              </p>
+            </div>
+          </div>
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow border-base-300 bg-primary border"
+          >
+            <div class="collapse-title text-xl font-medium">
+              What is event delegation in the context of the DOM, and why is it
+              useful?
+            </div>
+            <div class="collapse-content bg-gray2">
+              <p class="p-4">
+                Event delegation in the context of the DOM is a technique where
+                a single event listener is added to a parent element rather than
+                multiple event listeners to individual child elements. The event
+                listener takes advantage of event bubbling (where an event
+                propagates up through the DOM from the target element to its
+                ancestors) to handle events for multiple child elements
+                efficiently.
+              </p>
+            </div>
+          </div>
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow border-base-300 bg-primary border"
+          >
+            <div class="collapse-title text-xl font-medium">
+              How do you manipulate an element's attributes and styles using the
+              DOM?
+            </div>
+            <div class="collapse-content bg-gray2">
+              <p class="p-4">
+                To manipulate an element's attributes and styles using the DOM,
+                you can use methods like getAttribute() to retrieve an attribute
+                value or setAttribute() to modify it. For example, you might
+                change the src attribute of an image using
+                element.setAttribute('src', 'newImage.jpg') or remove an
+                attribute with removeAttribute(). Alternatively, attributes like
+                id and href can be modified directly as properties, such as
+                element.id = 'newId'. For styling, you can adjust inline styles
+                using the style property, for example, element.style.color =
+                'blue', or manage styles more efficiently by adding or removing
+                CSS classes with classList.add() or classList.remove(). These
+                techniques allow dynamic changes to the appearance and behavior
+                of DOM elements.
+              </p>
+            </div>
           </div>
         </div>
-        <div
-          tabindex="0"
-          class="collapse collapse-arrow border-base-300 bg-primary border"
-        >
-          <div class="collapse-title text-xl font-medium">
-            How do you select an element from the DOM?
-          </div>
-          <div class="collapse-content bg-gray2">
-            <p class="p-4">
-              To select an element from the DOM, you can use several JavaScript
-              methods. The getElementById('id') method selects an element by its
-              id, while getElementsByClassName('class') selects all elements
-              with a specific class name. Similarly, getElementsByTagName('tag')
-              selects elements by their tag name. If you need more flexible
-              selection, querySelector('selector') selects the first element
-              that matches a CSS selector, and querySelectorAll('selector')
-              selects all matching elements. These methods allow you to target
-              and manipulate specific elements in the document.
-            </p>
-          </div>
-        </div>
-        <div
-          tabindex="0"
-          class="collapse collapse-arrow border-base-300 bg-primary border"
-        >
-          <div class="collapse-title text-xl font-medium">
-            What is event delegation in the context of the DOM, and why is it
-            useful?
-          </div>
-          <div class="collapse-content bg-gray2">
-            <p class="p-4">
-              Event delegation in the context of the DOM is a technique where a
-              single event listener is added to a parent element rather than
-              multiple event listeners to individual child elements. The event
-              listener takes advantage of event bubbling (where an event
-              propagates up through the DOM from the target element to its
-              ancestors) to handle events for multiple child elements
-              efficiently.
-            </p>
-          </div>
-        </div>
-        <div
-          tabindex="0"
-          class="collapse collapse-arrow border-base-300 bg-primary border"
-        >
-          <div class="collapse-title text-xl font-medium">
-            How do you manipulate an element's attributes and styles using the
-            DOM?
-          </div>
-          <div class="collapse-content bg-gray2">
-            <p class="p-4">
-              To manipulate an element's attributes and styles using the DOM,
-              you can use methods like getAttribute() to retrieve an attribute
-              value or setAttribute() to modify it. For example, you might
-              change the src attribute of an image using
-              element.setAttribute('src', 'newImage.jpg') or remove an attribute
-              with removeAttribute(). Alternatively, attributes like id and href
-              can be modified directly as properties, such as element.id =
-              'newId'. For styling, you can adjust inline styles using the style
-              property, for example, element.style.color = 'blue', or manage
-              styles more efficiently by adding or removing CSS classes with
-              classList.add() or classList.remove(). These techniques allow
-              dynamic changes to the appearance and behavior of DOM elements.
-            </p>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="bg-gray2 h-20 mt-10 md:mt-16 lg:mt-20"></footer>
+      </main>
+    </section>
+    <footer class="h-10 md:h-16 lg:h-20"></footer>
     <script src="./feature.js"></script>
   </body>
 </html>
