@@ -23,6 +23,7 @@ document
       getValue("input-field1") > getTaka("balance")
     ) {
       unHide("error1");
+      alert("Please Try Again");
       return;
     }
     hide("error1");
@@ -78,6 +79,7 @@ document
       getValue("input-field2") > getTaka("balance")
     ) {
       unHide("error2");
+      alert("Please Try Again");
       return;
     }
     hide("error2");
@@ -133,6 +135,7 @@ document
       getValue("input-field3") > getTaka("balance")
     ) {
       unHide("error3");
+      alert("Please Try Again");
       return;
     }
     hide("error3");
