@@ -52,12 +52,12 @@
       <nav class="container mx-auto md:px-6">
         <div class="flex justify-between items-center py-3 md:pt-6 md:pb-10">
           <div class="md:hidden">
-            <button class="btn text-xl btn bg-primary px-3">
+            <button onclick="blog()" class="btn text-xl btn bg-primary px-3">
               <i class="fa-solid fa-newspaper"></i>
             </button>
           </div>
           <div class="hidden md:flex">
-            <button class="font-semibold text-xl btn bg-primary md:px-8">
+            <button onclick="blog()" class="font-semibold text-xl btn bg-primary md:px-8">
               Blog
             </button>
           </div>
@@ -84,22 +84,22 @@
         </div>
       </nav>
     </header>
-    <!--  -->
+    <!-- main bg -->
     <section class="bg-white pb-20">
       <main class="container mx-auto px-3 md:px-6">
         <!-- button toggle -->
-        <div class="flex justify-center py-6 md:py-10 lg:py-16 gap-3">
-          <button class="font-semibold text-xl btn bg-primary md:px-8">
+        <div  class="flex justify-center py-6 md:py-10 lg:py-16 gap-3">
+          <button id="donate-btn" class="font-semibold text-xl btn bg-primary md:px-8 ">
             Donation
           </button>
-          <button
+          <button id="history-btn"
             class="btn btn-outline font-semibold text-xl md:px-8 text-gray1"
           >
             History
           </button>
         </div>
         <!--donation  -->
-        <section class="space-y-6">
+        <section id="donate-container" class="space-y-6">
           <!-- card1 -->
           <div
             class="grid grid-cols-1 lg:grid-cols-2 p-4 rounded-xl border-gray-200 border-2 gap-4"
@@ -191,7 +191,7 @@
             <!-- image -->
             <div class="object-cover">
               <img
-                src="./images/quota-protest.png"
+                src="./images/quota-protest-01.png"
                 class="object-cover w-full lg:h-full rounded-xl"
                 alt=""
               />
@@ -230,7 +230,7 @@
           </div>
         </section>
         <!-- history -->
-        <section class="space-y-4">
+        <section id="history-container" class="space-y-4 hidden">
           <div class="rounded-xl border-gray-200 border-2 p-4 space-y-4">
             <h3 class="text-xl font-bold">
               <span>96500</span> Taka is Donated for famine-2024 at Feni,
