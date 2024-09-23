@@ -21,6 +21,7 @@
               gray1: "#585858",
               gray2: "#F9F7F3",
               gray3: "#f3f3f3",
+              dark1: "#38385D",
             },
           },
         },
@@ -57,7 +58,10 @@
             </button>
           </div>
           <div class="hidden md:flex">
-            <button onclick="home()" class="font-semibold text-xl btn bg-primary md:px-8">
+            <button
+              onclick="home()"
+              class="font-semibold text-xl btn bg-primary md:px-8"
+            >
               Home
             </button>
           </div>
@@ -97,13 +101,13 @@
         <div class="space-y-6">
           <div
             tabindex="0"
-            class="collapse collapse-arrow border-base-300 bg-primary border"
+            class="collapse collapse-arrow border-base-300 bg-dark1 text-primary border"
           >
             <div class="collapse-title text-xl font-medium">
               What is the Document Object Model (DOM)?
             </div>
             <div class="collapse-content bg-gray2">
-              <p class="p-4">
+              <p class="p-4 text-dark1">
                 The Document Object Model (DOM) is a programming interface for
                 web documents. It represents the structure of a document
                 (usually HTML or XML) as a tree of objects, where each node in
@@ -114,13 +118,13 @@
           </div>
           <div
             tabindex="0"
-            class="collapse collapse-arrow border-base-300 bg-primary border"
+            class="collapse collapse-arrow border-base-300 bg-dark1 border"
           >
-            <div class="collapse-title text-xl font-medium">
+            <div class="collapse-title text-xl text-primary font-medium">
               How do you select an element from the DOM?
             </div>
             <div class="collapse-content bg-gray2">
-              <p class="p-4">
+              <p class="p-4 text-dark1">
                 To select an element from the DOM, you can use several
                 JavaScript methods. The getElementById('id') method selects an
                 element by its id, while getElementsByClassName('class') selects
@@ -136,14 +140,14 @@
           </div>
           <div
             tabindex="0"
-            class="collapse collapse-arrow border-base-300 bg-primary border"
+            class="collapse collapse-arrow border-base-300 bg-dark1 border"
           >
-            <div class="collapse-title text-xl font-medium">
+            <div class="collapse-title text-primary text-xl font-medium">
               What is event delegation in the context of the DOM, and why is it
               useful?
             </div>
             <div class="collapse-content bg-gray2">
-              <p class="p-4">
+              <p class="p-4 text-dark1">
                 Event delegation in the context of the DOM is a technique where
                 a single event listener is added to a parent element rather than
                 multiple event listeners to individual child elements. The event
@@ -156,14 +160,14 @@
           </div>
           <div
             tabindex="0"
-            class="collapse collapse-arrow border-base-300 bg-primary border"
+            class="collapse collapse-arrow border-base-300 bg-dark1 border"
           >
-            <div class="collapse-title text-xl font-medium">
+            <div class="collapse-title text-xl text-primary font-medium">
               How do you manipulate an element's attributes and styles using the
               DOM?
             </div>
             <div class="collapse-content bg-gray2">
-              <p class="p-4">
+              <p class="p-4 text-dark1">
                 To manipulate an element's attributes and styles using the DOM,
                 you can use methods like getAttribute() to retrieve an attribute
                 value or setAttribute() to modify it. For example, you might
@@ -184,6 +188,6 @@
       </main>
     </section>
     <footer class="h-10 md:h-16 lg:h-20"></footer>
-    <script src="./feature.js"></script>
+    <script src="./js/functions.js"></script>
   </body>
 </html>
